@@ -1,0 +1,239 @@
+:root {
+  --vert: #898A1F;
+  --orange: #E8910F;
+  --beige: #fffaf3;
+  --gris: #444;
+  --blanc: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--beige);
+  color: var(--gris);
+  line-height: 1.6;
+}
+
+/* Header / Navbar */
+.site-header {
+  background-color: var(--blanc);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+.logo-img {
+  max-height: 60px;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+}
+
+.logo-vert {
+  color: #898A1F;
+}
+
+.logo-orange {
+  color: #E8910F;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--gris);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: var(--orange);
+}
+
+/* Hero Section */
+.hero {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #898A1F;
+  text-align: center;
+  color: var(--blanc);
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  color: var(--blanc);
+  margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--orange);
+  color: var(--blanc);
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: var(--blanc);
+  color: var(--orange);
+}
+
+/* Produits Section */
+.produits {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.produits h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--vert);
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--blanc);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  width: 250px;
+  transition: transform 0.3s;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 1rem;
+  color: var(--orange);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Recettes Section */
+.recettes {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: var(--orange);
+}
+
+.recettes h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.recettes .btn {
+  background: var(--orange);
+}
+
+.recettes .btn:hover {
+  background: var(--blanc);
+  color: var(--vert);
+}
+
+/* Newsletter Section */
+.newsletter {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--orange);
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.newsletter input {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  width: 250px;
+}
+
+.newsletter button {
+  background: var(--vert);
+  color: var(--blanc);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.newsletter button:hover {
+  background: var(--orange);
+}
+
+/* Footer */
+footer {
+  background: var(--gris);
+  color: var(--blanc);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+}

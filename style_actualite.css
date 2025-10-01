@@ -1,0 +1,275 @@
+/* =====================
+   Variables couleurs
+===================== */
+:root {
+  --vert: #898A1F;
+  --orange: #E8910F;
+  --beige: #fffaf3;
+  --gris: #444;
+  --blanc: #fff;
+}
+
+/* =====================
+   Reset
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: var(--beige);
+  color: var(--gris);
+  line-height: 1.6;
+}
+
+/* =====================
+   Header / Navbar
+===================== */
+.site-header {
+  background-color: var(--blanc);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 1rem 2rem;
+}
+
+.logo-img {
+  max-height: 60px;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+}
+
+.logo-vert {
+  color: #898A1F;
+}
+
+.logo-orange {
+  color: #E8910F;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--gris);
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: var(--orange);
+}
+
+/* =====================
+   Hero Section / Page Title
+===================== */
+.hero-actualite {
+  background-color: var(--vert);
+  color: var(--blanc);
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero-actualite .hero-content h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-actualite .hero-content p {
+  font-size: 1.2rem;
+}
+
+/* =====================
+   Main container
+===================== */
+.container {
+  max-width: 1100px;
+  margin: 40px auto 60px;
+  padding: 0 15px;
+}
+
+/* =====================
+   Actualités
+===================== */
+.actualites-news {
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.news {
+  background: #fff7f0;
+  /* PAD LEFT augmenté pour laisser la place à l'icône girafe */
+  border-left: 6px solid var(--orange);
+  padding: 18px 25px 18px 90px;
+  margin-bottom: 30px;
+  position: relative;
+  border-radius: 14px;
+  box-shadow: 0 3px 6px rgba(247,164,64,0.2);
+  font-size: 1.15em;
+  line-height: 1.5;
+}
+
+.news h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: var(--orange);
+  font-weight: 700;
+}
+
+/* ---------------------
+   Icône girafe (remplace le biberon)
+   - Dépose images/girafe.svg (préféré) ou images/girafe.png
+   - on utilise une pile d'URL pour fallback svg -> png
+---------------------- */
+.news::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 56px;
+  height: 56px;
+  background-image: url("images/giraffe.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.98;
+  pointer-events: none;
+}
+
+/* =====================
+   Produits
+===================== */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 3rem 0 2rem 0;
+  color: var(--vert);
+  font-weight: 700;
+}
+
+.products, .coming-soon, .reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 22px;
+  margin-bottom: 50px;
+}
+
+.product-card, .review-card {
+  background: var(--blanc);
+  border-radius: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.product-card:hover, .review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.product-card img, .review-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid var(--orange);
+}
+
+.product-card .info, .review-card .info {
+  padding: 18px 20px;
+  font-size: 1.05em;
+  color: #444;
+  line-height: 1.5;
+}
+
+.review-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 15px auto 5px auto;
+  display: block;
+  background: var(--orange);
+  font-size: 2em;
+  text-align: center;
+  line-height: 60px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  object-fit: cover;
+}
+
+.review-card .info p {
+  font-style: italic;
+  color: #555;
+  margin: 0;
+}
+
+.review-card .info p::before {
+  content: "“";
+  font-size: 1.05em;
+  vertical-align: top;
+  color: var(--orange);
+  margin-right: 6px;
+}
+
+.review-card .info p::after {
+  content: "";
+  font-size: 1.05em;
+  vertical-align: top;
+  color: var(--orange);
+  margin-left: 6px;
+}
+
+/* =====================
+   Footer
+===================== */
+footer {
+  background: var(--gris);
+  color: var(--blanc);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* =====================
+   Responsive
+===================== */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .hero-actualite .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Ajuste la taille de l'icône et le padding sur mobile */
+  .news::before {
+    width: 40px;
+    height: 40px;
+    left: 12px;
+  }
+  .news {
+    padding-left: 70px;
+  }
+}
