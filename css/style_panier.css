@@ -295,6 +295,12 @@ body {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
+.lang-switch img {
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+}
+
 /* ===== FOOTER ===== */
 footer {
   background: var(--gris);

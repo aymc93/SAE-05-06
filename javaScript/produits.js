@@ -30,7 +30,8 @@ function ajouterAuPanier(nom, prix, image) {
     const originalText = btn.textContent;
     const originalBg = btn.style.background;
     
-    btn.textContent = '✅ Ajouté au panier !';
+    const langue = document.documentElement.lang; // récupère la langue de la page
+btn.textContent = (langue === 'fr') ? '✅ Ajouté au panier !' : '✅ Added to cart!';
     btn.style.background = '#898A1F';
     btn.disabled = true;
     

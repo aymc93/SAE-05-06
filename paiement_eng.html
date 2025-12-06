@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,25 +17,22 @@
         <span class="logo-vert">Madou</span><span class="logo-orange">dinette</span>
       </div>
       <ul class="nav-links">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="presentation.html">Présentation</a></li>
-        <li><a href="actualite.html">Actualités</a></li>
-        <li><a href="produits.html">Produits</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="panier.html">Panier</a></li>
-        <li><a href="paiement.html" class="active">Paiement</a></li>
+        <li><a href="index_eng.html">Home</a></li>
+        <li><a href="presentation_eng.html">Presentation</a></li>
+        <li><a href="actualite_eng.html">Actuality</a></li>
+        <li><a href="produits_eng.html">Products</a></li>
+        <li><a href="contact_eng.html">Contact</a></li>
+        <li><a href="panier_eng.html">Cart</a></li>
+        <li><a href="paiement_eng.html" class="active">Payment</a></li>
       </ul>
     </nav>
-    
-    
-    
   </header>
 
   <!-- ===== HERO ===== -->
   <section class="hero-paiement">
     <div class="hero-content">
-      <h1>Paiement</h1>
-      <p>Finalisez votre commande en toute sérénité</p>
+      <h1>Payment</h1>
+      <p>Finalize your order with confidence</p>
     </div>
   </section>
 
@@ -43,90 +40,91 @@
   <main class="paiement-container">
 
     <section class="bloc recap">
-      <h2>Récapitulatif</h2>
+      <h2>Summary</h2>
       <div class="ligne">
-        <span>Sous-total</span>
+        <span>Sub-total</span>
         <span>14,97 €</span>
       </div>
       <div class="ligne">
-        <span>Livraison</span>
+        <span>Delivery</span>
         <span>2,90 €</span>
       </div>
       <div class="ligne total">
         <span>Total</span>
         <span>17,87 €</span>
       </div>
-      <p class="note">Montant indicatif pour le visuel (pas de paiement en ligne).</p>
+      <p class="note">Indicative amount for the visual (no online payment).</p>
     </section>
 
     <section class="bloc paiement-form">
-      <h2>Informations de paiement</h2>
+      <h2>Payment information</h2>
       <form>
         <div class="form-group">
-          <label for="nom-carte">Nom sur la carte</label>
+          <label for="nom-carte">Name on the card</label>
           <input type="text" id="nom-carte" placeholder="Ex : A. Diallo">
         </div>
 
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="votreemail@example.com">
+          <input type="email" id="email" placeholder="youremail@example.com">
         </div>
 
         <div class="form-group">
-          <label for="adresse">Adresse de livraison</label>
-          <input type="text" id="adresse" placeholder="Numéro, rue">
+          <label for="adresse">Shipping address</label>
+          <input type="text" id="adress" placeholder="Number, street, box">
         </div>
 
         <div class="form-group">
-          <label for="ville">Ville</label>
-          <input type="text" id="ville" placeholder="Paris">
+          <label for="ville">Town</label>
+          <input type="text" id="ville" placeholder="Manchester">
         </div>
 
         <div class="grid-2">
           <div class="form-group">
-            <label for="code-postal">Code postal</label>
-            <input type="text" id="code-postal" placeholder="75000">
+            <label for="code-postal">Postal code</label>
+            <input type="text" id="code-postal" placeholder="M12 4AH">
           </div>
           <div class="form-group">
-            <label for="pays">Pays</label>
+            <label for="pays">Country</label>
             <select id="pays">
-              <option>France</option>
-              <option>Belgique</option>
-              <option>Suisse</option>
+              <option>England</option>
+              <option>Belgium </option>
+              <option>Switzerland </option>
               <option>Luxembourg</option>
+	      <option>France</option>
             </select>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="numero-carte">Numéro de carte</label>
+          <label for="numero-carte">Card number</label>
           <input type="text" id="numero-carte" placeholder="0000 0000 0000 0000">
         </div>
 
         <div class="grid-2">
           <div class="form-group">
-            <label for="expiration">Expiration</label>
+            <label for="expiration">Expiration Date</label>
             <input type="text" id="expiration" placeholder="MM/AA">
           </div>
           <div class="form-group">
-            <label for="cvc">CVC</label>
+            <label for="cvc">CVV / Security Code</label>
             <input type="text" id="cvc" placeholder="123">
           </div>
         </div>
 
-        <button type="button" class="btn-payer">Valider le paiement</button>
+        <button type="button" class="btn-payer">Confirm the payment</button>
       </form>
     </section>
 
   </main>
 
-  <div id="toast" class="toast" aria-live="polite">Paiement valide !</div>
+  <div id="toast" class="toast" aria-live="polite">Valid payment!</div>
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <p>&copy; 2025 Madoudinette - Tous droits réservés</p>
+    <p>&copy; 2025 Madoudinette - All rights reserved</p>
   </footer>
-<script src="javaScript/paiement.js"></script>
+<script src="javaScript/paiement_eng.js"></script>
 
 </body>
 </html>

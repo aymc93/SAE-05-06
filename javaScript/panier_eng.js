@@ -57,7 +57,8 @@ function renderCart() {
             
             <div class="info">
                 <h3>${item.nom}</h3>
-                <p>Petit pot gourmand pour bébé</p>
+		<p>Delicious baby food jar</p>
+
 
                 <div class="quantite">
                     <button class="minus">−</button>
@@ -69,7 +70,7 @@ function renderCart() {
             <div class="prix">${totalItem.toFixed(2)} €</div>
 
             <button class="delete-btn">
-                🗑️ Supprimer
+                🗑️ Delete
             </button>
         `;
 
@@ -111,7 +112,7 @@ document.addEventListener("click", function(e) {
             renderCart();
         } else {
             // Demander confirmation avant de supprimer
-            if (confirm("Voulez-vous retirer ce produit du panier ?")) {
+            if (confirm("Do you want to remove this product from the cart?")) {
                 cart.splice(index, 1);
                 saveCart();
                 renderCart();
@@ -121,7 +122,7 @@ document.addEventListener("click", function(e) {
 
     // Supprimer un produit
     if (e.target.classList.contains("delete-btn")) {
-        if (confirm("Êtes-vous sûr de vouloir supprimer ce produit ?")) {
+        if (confirm("Are you sure you want to delete this product?")) {
             cart.splice(index, 1);
             saveCart();
             renderCart();

@@ -236,6 +236,17 @@ body {
   color: var(--vert);
 }
 
+.lang-switch {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.lang-switch img {
+  width: 40px;
+  height: 20px;
+}
+
 /* Footer */
 footer {
   background: var(--gris);

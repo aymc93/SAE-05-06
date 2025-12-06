@@ -244,6 +244,12 @@ body {
   margin-left: 6px;
 }
 
+.lang-switch img {
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+}
+
 /* =====================
    Footer
 ===================== */

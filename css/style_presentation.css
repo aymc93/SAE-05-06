@@ -114,6 +114,13 @@ body {
 }
 .btn:hover { background:var(--blanc); color:var(--vert); }
 
+.lang-switch img {
+  width: 35px;
+  height: 20px;
+  
+}
+
+
 /* Footer */
 footer { background:var(--gris); color:var(--blanc); text-align:center; padding:1rem; margin-top:2rem; }
 

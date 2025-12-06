@@ -209,6 +209,13 @@ body {
   transform: translateY(0);
 }
 
+.lang-switch img {
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
 /* =====================
    Footer
 ===================== */
