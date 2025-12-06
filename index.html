@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Madoudinette - Petits Pots Bébé Maison</title>
-  <link rel="stylesheet" href="style_index.css">
+  <link rel="stylesheet" href="css/style_index.css">
+  <script src="javaScript/index.js" defer ></script>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +13,7 @@
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <nav class="navbar">
-      <img src="images/logo.png" alt="Logo Madoudinette" class="logo-img">
+      <img src="images/imagelogo.png" alt="Logo Madoudinette" class="logo-img">
       <div class="logo">
         <span class="logo-vert">Madou</span><span class="logo-orange">dinette</span>
       </div>
@@ -22,15 +23,16 @@
         <li><a href="actualite.html">Actualités</a></li>
         <li><a href="produits.html">Produits</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="panier.html">Panier</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- ===== HERO ===== -->
-  <section class="hero">
+  <section class="hero" id="hero">
     <div class="hero-content">
       <h1>Madoudinette</h1>
-      <h2>Les premiers petits pots pour bébés inspirés des saveurs africaines, halal et biologique</h2>
+      <h2>Les premiers petits pots pour bébés inspirés des saveurs du monde, halal et biologique</h2>
       <p>Sains, frais et préparés avec amour </p>
       <a href="produits.html" class="btn">Découvrir nos produits</a>
     </div>
@@ -65,13 +67,15 @@
   <!-- ===== NEWSLETTER ===== -->
   <section class="newsletter">
     <h2>Inscrivez-vous à notre newsletter</h2>
+    <p>Rejoignez l’aventure Madoudinette 🦒</p>
+<p>Soyez informés du lancement et recevez nos actualités en avant-première.</p>
     <form>
       <input type="email" placeholder="Votre e-mail">
       <button type="submit">S’inscrire</button>
     </form>
   </section>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ===== FOOTER ====== -->
   <footer>
     <p>&copy; 2025 Madoudinette - Tous droits réservés</p>
   </footer>

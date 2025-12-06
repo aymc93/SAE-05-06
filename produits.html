@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalogue - Madoudinette</title>
-  <link rel="stylesheet" href="style_produits.css">
+  <link rel="stylesheet" href="css/style_produits.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +12,7 @@
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <nav class="navbar">
-      <img src="images/logo.png" alt="Logo Madoudinette" class="logo-img">
+      <img src="images/imagelogo.png" alt="Logo Madoudinette" class="logo-img">
       <div class="logo">
         <span class="logo-vert">Madou</span><span class="logo-orange">dinette</span>
       </div>
@@ -22,6 +22,7 @@
         <li><a href="actualite.html">Actualités</a></li>
         <li><a href="produits.html" class="active">Produits</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="panier.html">Panier</a></li>
       </ul>
     </nav>
   </header>
@@ -37,9 +38,9 @@
   <!-- ===== INTRO ===== -->
   <section class="intro">
     <p>
-      Une invitation au voyage culinaire pour les tout-petits, avec des saveurs africaines halal adaptées aux bébés dès 6 mois.
-      Chaque bouchée, riche en nutriments essentiels, offre une expérience unique d’éveil des sens et de découverte gustative,
-      tout en respectant la richesse des traditions culinaires africaines et les besoins spécifiques de l’alimentation infantile.
+      Une invitation au voyage culinaire pour les tout-petits, avec des saveurs du monde halal adaptées aux plus petits.
+      Chaque bouchée, riche en nutriments essentiels, offre une expérience unique d'éveil des sens et de découverte gustative,
+      tout en respectant la richesse des traditions culinaires africaines et les besoins spécifiques de l'alimentation infantile.
     </p>
   </section>
 
@@ -48,7 +49,7 @@
 
     <!-- Thieb poisson -->
     <article class="produit">
-      <img src="images/Madou-thiéb.jpg" alt="Thieb poisson pour bébé">
+      <img src="images/Madou-thieb.jpg" alt="Thieb poisson pour bébé">
       <div class="details">
         <h2>Thieb Poisson</h2>
         <p>
@@ -63,17 +64,23 @@
           <li>Magnésium et zinc : pour renforcer le système immunitaire</li>
           <li>Vitamines B1, B2, B3 : énergie et bon fonctionnement du système nerveux</li>
         </ul>
+        <button class="add-to-cart"
+          data-name="Thieb Poisson"
+          data-price="4.99"
+          data-img="images/Madou-thieb.jpg">
+          🛒 Ajouter au panier
+        </button>
       </div>
     </article>
 
     <!-- Mafé Bœuf -->
     <article class="produit">
-      <img src="images/Madou-Maffé.jpg" alt="Mafé bœuf pour bébé">
+      <img src="images/Madou-Maffe.jpg" alt="Mafé bœuf pour bébé">
       <div class="details">
         <h2>Mafé Bœuf</h2>
         <p>
-          Une version adaptée du grand classique d’Afrique de l’Ouest.
-          Bœuf fondant, légumes mijotés et sauce douce à l’arachide.
+          Une version adaptée du grand classique d'Afrique de l'Ouest.
+          Bœuf fondant, légumes mijotés et sauce douce à l'arachide.
           Saveur et onctuosité pour une croissance optimale.
         </p>
         <h3>Valeurs nutritionnelles clés :</h3>
@@ -84,6 +91,12 @@
           <li>Vitamines B1, B2, B3 : énergie et fonctions cognitives</li>
           <li>Vitamine A : vision, peau et croissance cellulaire</li>
         </ul>
+        <button class="add-to-cart"
+          data-name="Mafé Bœuf"
+          data-price="4.99"
+          data-img="images/Madou-Maffe.jpg">
+          🛒 Ajouter au panier
+        </button>
       </div>
     </article>
 
@@ -105,6 +118,12 @@
           <li>Vitamines B1, B2, B3 : système nerveux</li>
           <li>Vitamine A : vision, peau et régénération cellulaire</li>
         </ul>
+        <button class="add-to-cart"
+          data-name="Yassa Poulet"
+          data-price="4.99"
+          data-img="images/Madou-Yassa.jpg">
+          🛒 Ajouter au panier
+        </button>
       </div>
     </article>
 
@@ -114,7 +133,7 @@
   <footer>
     <p>&copy; 2025 Madoudinette. Tous droits réservés</p>
   </footer>
+  <script src="javaScript/produits.js"></script>
 
 </body>
 </html>
-

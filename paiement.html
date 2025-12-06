@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiement - Madoudinette</title>
+  <link rel="stylesheet" href="css//style_paiement.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <img src="images/imagelogo.png" alt="Logo Madoudinette" class="logo-img">
+      <div class="logo">
+        <span class="logo-vert">Madou</span><span class="logo-orange">dinette</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="actualite.html">Actualités</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="panier.html" class="active">Panier</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-paiement">
+    <div class="hero-content">
+      <h1>Paiement</h1>
+      <p>Finalisez votre commande en toute sérénité</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTENU ===== -->
+  <main class="paiement-container">
+
+    <section class="bloc recap">
+      <h2>Récapitulatif</h2>
+      <div class="ligne">
+        <span>Sous-total</span>
+        <span>14,97 €</span>
+      </div>
+      <div class="ligne">
+        <span>Livraison</span>
+        <span>2,90 €</span>
+      </div>
+      <div class="ligne total">
+        <span>Total</span>
+        <span>17,87 €</span>
+      </div>
+      <p class="note">Montant indicatif pour le visuel (pas de paiement en ligne).</p>
+    </section>
+
+    <section class="bloc paiement-form">
+      <h2>Informations de paiement</h2>
+      <form>
+        <div class="form-group">
+          <label for="nom-carte">Nom sur la carte</label>
+          <input type="text" id="nom-carte" placeholder="Ex : A. Diallo">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="votreemail@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="adresse">Adresse de livraison</label>
+          <input type="text" id="adresse" placeholder="Numéro, rue">
+        </div>
+
+        <div class="form-group">
+          <label for="ville">Ville</label>
+          <input type="text" id="ville" placeholder="Paris">
+        </div>
+
+        <div class="grid-2">
+          <div class="form-group">
+            <label for="code-postal">Code postal</label>
+            <input type="text" id="code-postal" placeholder="75000">
+          </div>
+          <div class="form-group">
+            <label for="pays">Pays</label>
+            <select id="pays">
+              <option>France</option>
+              <option>Belgique</option>
+              <option>Suisse</option>
+              <option>Luxembourg</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="numero-carte">Numéro de carte</label>
+          <input type="text" id="numero-carte" placeholder="0000 0000 0000 0000">
+        </div>
+
+        <div class="grid-2">
+          <div class="form-group">
+            <label for="expiration">Expiration</label>
+            <input type="text" id="expiration" placeholder="MM/AA">
+          </div>
+          <div class="form-group">
+            <label for="cvc">CVC</label>
+            <input type="text" id="cvc" placeholder="123">
+          </div>
+        </div>
+
+        <button type="button" class="btn-payer">Valider le paiement</button>
+      </form>
+    </section>
+
+  </main>
+
+  <div id="toast" class="toast" aria-live="polite">Paiement valide !</div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Madoudinette - Tous droits réservés</p>
+  </footer>
+<script src="javaScript/paiement.js"></script>
+
+</body>
+</html>
+

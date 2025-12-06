@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Votre panier - Madoudinette</title>
+  <link rel="stylesheet" href="css/style_panier.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <img src="images/imagelogo.png" alt="Logo Madoudinette" class="logo-img">
+      <div class="logo">
+        <span class="logo-vert">Madou</span><span class="logo-orange">dinette</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="presentation.html">Présentation</a></li>
+        <li><a href="actualite.html">Actualités</a></li>
+        <li><a href="produits.html">Produits</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="panier.html" class="active">Panier</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero-panier">
+    <h1>Votre panier</h1>
+    <p>Vérifiez vos petits pots avant de finaliser votre commande 🍽️</p>
+  </section>
+
+  <!-- ===== PANIER ===== -->
+  <main class="container">
+
+    <section class="panier-items" id="panier-items">
+  <!-- Les produits s'afficheront automatiquement -->
+  <div id="panier-vide" class="panier-vide">
+    <h2>Votre panier est vide</h2>
+    <p>Découvrez nos délicieux petits pots !</p>
+    <a href="produits.html" class="btn-voir-produits">Voir les produits</a>
+  </div>
+</section>
+
+
+
+    <!-- ===== RÉCAP ===== -->
+    <aside class="panier-total">
+      <h2>Récapitulatif</h2>
+
+      <div class="ligne">
+        <span>Sous-total</span>
+        <span id="subtotal">0,00 €</span>
+      </div>
+
+      <div class="ligne">
+        <span>Livraison</span>
+        <span id="shipping">0,00 €</span>
+      </div>
+
+      <div class="ligne total">
+        <span>Total</span>
+        <span id="total">0,00 €</span>
+      </div>
+
+
+      <a class="btn-commander" href="paiement.html">Passer la commande</a>
+    </aside>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Madoudinette - Tous droits réservés</p>
+  </footer>
+
+  <script src="javaScript/panier.js"></script>
+
+</body>
+</html>

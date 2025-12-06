@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Présentation - Madoudinette</title>
-  <link rel="stylesheet" href="style_presentation.css">
+  <link rel="stylesheet" href="css/style_presentation.css">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,7 +12,7 @@
   <!-- HEADER -->
   <header class="site-header">
     <nav class="navbar">
-      <img src="images/logo.png" alt="Logo Madoudinette" class="logo-img">
+      <img src="images/imagelogo.png" alt="Logo Madoudinette" class="logo-img">
       <div class="logo">
         <span class="logo-vert">Madou</span><span class="logo-orange">dinette</span>
       </div>
@@ -22,6 +22,7 @@
         <li><a href="actualite.html">Actualités</a></li>
         <li><a href="produits.html">Produits</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="panier.html">Panier</a></li>
       </ul>
     </nav>
   </header>
@@ -30,7 +31,7 @@
   <section class="hero">
     <div class="hero-content">
       <h1>Notre histoire</h1>
-      <h2>Comment Madoudinette est née — un besoin, une idée, une mission</h2>
+      <h2>Comment Madoudinette est née : un besoin, une idée, une mission</h2>
     </div>
   </section>
 
@@ -40,105 +41,58 @@
     <section class="story-block">
       <h2>Aux origines</h2>
       <p>
-        Lors d’un voyage au Sénégal, Fatoumata, jeune maman, s’est heurtée à un constat simple mais fort : il n’existait pas d’offre de petits pots qui 
-        allie <strong>saveurs africaines</strong>, <strong>qualité nutritionnelle</strong> et <strong>respect des convictions halal</strong>. 
-        Ce manque l’a touchée : comment transmettre les goûts de son enfance sans renoncer à la sécurité alimentaire des tout-petits ?
+        Après un voyage au Sénégal, j’ai été confrontée à un constat simple mais important : il n’existait aucune offre de petits pots qui allie<strong> saveurs du monde</strong>, <strong>respect des convictions halal</strong> et <strong>qualité nutritionnelle</strong>. 
+        Ce manque m’a interpellée : les bébés n’ont aujourd’hui que peu d’accès à une réelle diversité de saveurs adaptée à leurs besoins.
       </p>
+        <img src="images\origine.jpg" alt="Photo Aux origines" class="story-img right">
     </section>
 
     <section class="story-block alt">
       <h2>La naissance de Madoudinette</h2>
       <p>
-        De ce besoin est née l’idée de Madoudinette : proposer des petits pots **bio**, **halal**, inspirés des recettes d’Afrique de l’Ouest — mafé, yassa, thiéboudiène — 
-        revisités pour les bébés dès 6 mois. L’objectif : préserver les saveurs tout en adaptant textures et ingrédients pour les palais fragiles.
-      </p>
+        De ce constat est née l’idée de Madoudinette : proposer des petits pots halal, bio et inspirés des saveurs du monde adaptées aux tout-petits. Mon objectif : mettre en avant la découverte de nouvelles saveurs grâce à la diversification alimentaire, tout en respectant les convictions religieuses des familles.
+     </p>
     </section>
 
     <section class="story-block">
       <h2>Aujourd’hui</h2>
       <p>
-        Madoudinette, c’est une petite entreprise qui travaille avec des producteurs locaux et des nutritionnistes infantiles pour créer des recettes équilibrées,
-        respectueuses et pleines de sens. Chaque pot raconte une histoire, invite au voyage, et apporte à bébé les nutriments dont il a besoin pour grandir.
-      </p>
+       Madoudinette est une petite entreprise qui travaille avec des producteurs locaux et internationaux pour obtenir certains produits exotiques, ainsi qu’avec une diététicienne infantile afin d’élaborer des recettes adaptées et équilibrées. Elle privilégie également les produits issus de filières locales et de coopératives.
+L'objectif est de proposer une gamme variée de petits pots sucrés et salés, inspirés des saveurs du monde, avec comme première étape des recettes d’Afrique de l’Ouest déjà réalisées, comme le mafé, le yassa ou le thiéboudiène.
+     </p>
+      <img src="images\aujourd'hui.jpg" alt="Photo" class="story-img left">
     </section>
 
     <!-- MISSIONS DETAILLEES -->
     <section class="missions">
-      <h2>Nos missions détaillées</h2>
+      <h2>Nos engagements</h2>
       <p class="intro">Au-delà du goût, voici comment nous concrétisons notre engagement : santé, ingrédients, environnement, sécurité et transmission culturelle.</p>
 
       <div class="mission-grid">
         <!-- Santé & Nutrition -->
         <article class="mission-card">
           <h3>🔬 Santé & nutrition</h3>
-          <p>Des recettes conçues pour couvrir les besoins essentiels des nourrissons et soutenir leur croissance physique et cognitive.</p>
-          <ul>
-            <li><strong>Calcium</strong> — pour la formation des os et des dents.</li>
-            <li><strong>Fer & cuivre</strong> — soutiennent le développement cognitif et l’oxygénation.</li>
-            <li><strong>Magnésium & zinc</strong> — pour l’immunité et le métabolisme.</li>
-            <li><strong>Vitamines B1, B2, B3</strong> — énergie et bon fonctionnement du système nerveux.</li>
-            <li><strong>Vitamine A</strong> — vision, croissance cellulaire et peau saine.</li>
-            <li><strong>Sans sucres ajoutés</strong>, sans conservateurs ni arômes artificiels.</li>
-          </ul>
+          <p>Des recettes adaptées aux besoins des nourrissons, pour soutenir leur croissance et leur développement cognitif.
+Riches en calcium, fer, zinc et vitamines, sans sucres ajoutés, conservateurs ni arômes artificiels.</p>
         </article>
 
         <!-- Ingrédients & qualité -->
         <article class="mission-card">
           <h3>🌿 Ingrédients & qualité</h3>
-          <p>Nous sélectionnons des matières premières simples, reconnaissables et de qualité.</p>
-          <ul>
-            <li>Produits issus, autant que possible, de l’agriculture biologique.</li>
-            <li>Prédilection pour les céréales africaines (fonio, mil), légumes de saison et protéines halal.</li>
-            <li>Recettes courtes et transparentes : on sait ce qu’il y a dans chaque pot.</li>
-            <li>Contrôles qualité réguliers pour conserver la fraîcheur et la valeur nutritionnelle.</li>
-          </ul>
+          <p>Des matières premières simples et reconnaissables, bio autant que possible, avec des céréales africaines comme le fonio, des légumes de saison et des protéines halal. Recettes courtes et transparentes, contrôles qualité réguliers.</p>         
         </article>
 
-        <!-- Durabilité & emballages -->
-        <article class="mission-card">
-          <h3>🌍 Durabilité & emballages</h3>
-          <p>Limiter notre empreinte : emballages recyclables, réduction du plastique et approvisionnement réfléchi.</p>
-          <ul>
-            <li>Réduction des emballages secondaires quand c’est possible.</li>
-            <li>Choix d’emballages réutilisables ou recyclables.</li>
-            <li>Production à petite échelle pour diminuer le gaspillage.</li>
-            <li>Soutien aux filières locales et traçabilité des ingrédients.</li>
-          </ul>
-        </article>
-
-        <!-- Sécurité & traçabilité -->
+	<!-- Sécurité & traçabilité -->
         <article class="mission-card">
           <h3>🛡️ Sécurité & traçabilité</h3>
-          <p>La sécurité alimentaire est non négociable : normes strictes et collaboration professionnelle.</p>
-          <ul>
-            <li>Recettes élaborées avec une diététicienne-nutritionniste infantile.</li>
-            <li>Procédures de production respectant les bonnes pratiques d’hygiène.</li>
-            <li>Traçabilité des lots et contrôles internes pour chaque production.</li>
-            <li>Information claire pour les parents (allergènes, composition).</li>
-          </ul>
-        </article>
-
-        <!-- Culture & transmission -->
-        <article class="mission-card">
-          <h3>🍲 Culture & transmission</h3>
-          <p>Faire connaître la richesse des traditions culinaires africaines, dès le plus jeune âge.</p>
-          <ul>
-            <li>Revisiter des plats emblématiques (mafé, yassa, thiéboudiène) en versions douces pour bébé.</li>
-            <li>Valoriser les saveurs et habitudes culinaires familiales.</li>
-            <li>Éduquer au goût sans forcer : éveil progressif et respect du rythme de l’enfant.</li>
-          </ul>
-        </article>
+          <p>Normes strictes, hygiène irréprochable, recettes validées par une diététicienne infantile, traçabilité et informations claires pour les parents (allergènes, composition).</p>
+         </article>
 
         <!-- Communauté & équité -->
         <article class="mission-card">
           <h3>🤝 Communauté & équité</h3>
-          <p>Créer des retombées positives pour les producteurs et les familles.</p>
-          <ul>
-            <li>Soutien aux producteurs locaux et pratiques agricoles responsables.</li>
-            <li>Partenariats transparents, commerce équitable quand possible.</li>
-            <li>Favoriser l’accès à une alimentation de qualité pour un maximum de familles.</li>
-          </ul>
-        </article>
+          <p>Soutien aux producteurs locaux et aux pratiques responsables, partenariats transparents et commerce équitable, pour rendre une alimentation de qualité accessible au plus grand nombre.</p>
+	</article>
       </div>
 
       <p class="cta">Envie d’en savoir plus sur nos recettes et la composition nutritionnelle ? <a href="produits.html" class="btn">Voir nos produits</a></p>
